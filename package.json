@@ -9,7 +9,9 @@
     "dev": "nodemon src/app.ts",
     "lint": "eslint --ext .ts,.js",
     "lint:fix": "eslint --ext .ts,.js --fix",
-    "test": "jest"
+    "test": "jest",
+    "docker:up": "docker compose -f docker/docker-compose.yml up -d",
+    "docker:down": "docker compose -f docker/docker-compose.yml down"
   },
   "author": "Gianluca Zicca",
   "license": "MIT",
